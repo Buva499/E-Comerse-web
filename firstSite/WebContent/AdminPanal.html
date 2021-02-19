@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Panal</title>
+</head>
+<style>
+
+	
+	.container{
+		align-content: center;
+		justify-content: center;
+		background-color: black;
+		border-radius: 65px;
+		
+		position: absolute;
+		 top: 50%;
+		 left: 180px;
+		 margin: -150px 0 0 -150px;
+		
+	}
+	
+	.navbar li{
+		display: inline;
+		padding: 56px;
+		align-content: center;
+		justify-content: center;
+		
+	}
+	.navbar li a{
+		text-decoration: none;
+		color: white;
+		font-weight: 10px;
+	}
+	.navbar li a:hover{
+		background-color: lightgrey;
+		border: 2px solid white;
+		color: black;
+		margin: 5px;
+		padding: 10px;
+		border-radius: 50px;
+	}
+	.navbar ul{
+		display: flex;
+	}
+	
+	@media only screen and (max-width:800px){
+
+		nav ul{
+			position: absolute;
+			top: 100px;
+			left:0px;
+			background: #333;
+			width: 100%;
+			overflow: hidden;
+			transition: max-height 0.5s;
+		}
+		nav ul li{
+			display: block;
+			margin-right: 50px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			
+		}
+		nav ul li a{
+			color: #fff;
+			}
+			.menu-icon{
+				display: block;
+				cursor: pointer;
+			}
+	}
+	/*----------media query  _____MENU SCREEN size 600--------*/
+	@media only screen and (max-width:800px){
+		.row{
+			text-align: center;
+		}
+		.col-0, .col-3 .col-2, .col-4{
+			flex-basis: 100%;
+
+		}
+	}
+</style>
+<body>
+
+	<div class="container">
+		<nav class="navbar">
+			<ul>
+				<li><a href="AdminPage.html">Add Product</a></li>
+				<li><a href="UpdateProduct.html">Update Product</a></li>
+				<li><a href="./ImageViewerAdmin">View Product</a></li>
+				<li><a href="./ViewAllCustomerOrder">Customer Order</a></li>
+				<li><a href="./AdminProfile">Profile</a></li>
+				<li><a href="./AdminLogout">Sign Out</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

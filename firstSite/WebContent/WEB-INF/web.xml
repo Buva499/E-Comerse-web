@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>firstSite</display-name>
+	<filter>
+		<description>
+		</description>
+		<display-name>CheckPassword</display-name>
+		<filter-name>CheckPassword</filter-name>
+		<filter-class>in.smarttech.controller.CheckPassword</filter-class>
+	</filter>
+	<filter>
+		<description>
+		</description>
+		<display-name>CustomerFilter</display-name>
+		<filter-name>CustomerFilter</filter-name>
+		<filter-class>in.smarttech.controller.CustomerFilter</filter-class>
+	</filter>
+	<filter>
+		<description>
+		</description>
+		<display-name>VerifyAddress</display-name>
+		<filter-name>VerifyAddress</filter-name>
+		<filter-class>in.smarttech.controller.VerifyAddress</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>CheckPassword</filter-name>
+		<url-pattern>/CheckPassword</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CheckPassword</filter-name>
+		<url-pattern>/Signup</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CustomerFilter</filter-name>
+		<url-pattern>/CustomerFilter</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CustomerFilter</filter-name>
+		<url-pattern>/CustomerRegister</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>VerifyAddress</filter-name>
+		<url-pattern>/VerifyAddress</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>VerifyAddress</filter-name>
+		<url-pattern>/Mobile</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>VerifyAddress</filter-name>
+		<url-pattern>/Other</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>VerifyAddress</filter-name>
+		<url-pattern>/Tshirt</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	
+	
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>ImageViewerController</welcome-file>
+		
+	</welcome-file-list>
+</web-app>

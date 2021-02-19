@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer order status</title>
+    <link rel="stylesheet" type="text/css" href="css/radio.css">
+</head>
+<body>
+  <form action="UpdateOrderStatus" method="post"> 
+    <div class="wrapper">
+      <div class="title">Select your option</div>
+      <div class="box">
+        <input type="radio" name="ostatus" id="option-1" value="your order is dispatched.">
+        <input type="radio" name="ostatus" id="option-2" value="your order is delivered.">
+        <input type="radio" name="ostatus" id="option-3" value="your order is canceled.">
+        <label for="option-1" class="option-1">
+          <div class="dot"></div>
+          <div class="text">your order is dispatched.</div>
+        </label>
+        <label for="option-2" class="option-2">
+          <div class="dot"></div>
+          <div class="text">your order is delivered.</div>
+        </label>
+        <label for="option-3" class="option-3">
+          <div class="dot"></div>
+          <div class="text">your order is canceled.</div>
+        </label>
+        <div align="center"><button type="submit" >send update</button></div>
+      </div>
+    </div>
+  </form>
+
+</body>
+</html>

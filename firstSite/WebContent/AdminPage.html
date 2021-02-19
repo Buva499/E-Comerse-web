@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/table.css">
+<link rel="stylesheet" type="text/css" href="css/inputs.css">
+</head>
+
+<body>
+<div>
+<div class="centered2">
+<form action="AddProduct" method="post" enctype="multipart/form-data">
+
+<table>
+<tr>
+<th align="center"  colspan="3">
+<h2 align="center"> Enter Product Details</h2>
+</th>
+<tr>
+<th align="right" bgcolor="#ECF0F1">Product No</th>
+<td><input type="text" name="pno" size="30" required="required"/></td>
+</tr>
+
+<tr>
+<th align="right" bgcolor="#ECF0F1" >Enter Product Name</th>
+<td><input type="text" name="pname" size="30" required="required"/></td>
+</tr>
+
+<tr>
+<th align="right" bgcolor="#ECF0F1">Category</th>
+<td><input type="text" name="catagory" size="30" required="required"/></td>
+</tr>
+
+<tr>
+<th align="right" bgcolor="#ECF0F1">Product Details</th>
+<td><textarea rows="10"  cols="32" name="pdetails" required="required"></textarea></td>
+</tr>
+
+<tr>
+<th align="right" bgcolor="#ECF0F1">Product Cost</th>
+<td><input type="text" name="pcost" size="30" required="required"/></td>
+</tr>
+
+
+<tr>
+<th align="right" bgcolor="#ECF0F1 ">Upload Product Image:</th>
+<td><input type="file" name="pimg" required="required" class="upload-box"/></td>
+</tr>
+
+<tr>
+<th>              </th>
+<td align="center"><button class="btn">Add product</button></td>
+</tr>
+
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

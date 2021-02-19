@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body {
+  background-color:white
+  font-family: 'poppins', sans-serif;
+}
+table{
+  margin: auto;
+  vertical-align: middle;
+  width: 50%;
+  border: 3px solid rgb(164, 179, 177);
+  box-shadow: 5px rgb(51, 48, 48);
+  padding: 10px;
+  background-color:cornsilk
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+.header{
+	background: radial-gradient(rgb(26, 121, 175),#202e2d);
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+a{
+	font-family:cursive;
+	text-decoration: none;
+	color: rgb(248, 248, 248);
+}
+	/*----------media query  _____MENU--------*/
+	@media only screen and (max-width:800px){
+	table{
+		width: 25%;
+	}
+		nav ul{
+			position: absolute;
+			top: 100px;
+			left:0px;
+			background: #333;
+			width: 100%;
+			overflow: hidden;
+			transition: max-height 0.5s;
+		}
+		nav ul li{
+			display: block;
+			margin-right: 50px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			
+		}
+		nav ul li a{
+			color: #fff;
+			}
+			.menu-icon{
+				display: block;
+				cursor: pointer;
+			}
+	}
+	/*----------media query  _____MENU SCREEN size 600--------*/
+	@media only screen and (max-width:800px){
+		.row{
+			text-align: center;
+		}
+		.col-0, .col-3 .col-2, .col-4{
+			flex-basis: 100%;
+
+		}
+	}
